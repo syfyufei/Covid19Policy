@@ -15,7 +15,7 @@ p_load(
   xlsx
 )
 set.seed(19960916)
-setwd('/Users/sunyufei/Documents/GitHub/Covid19Force')
+setwd('/Users/sunyufei/Documents/GitHub/Covid19Policy')
 options(scipen = 200)
 ```
 
