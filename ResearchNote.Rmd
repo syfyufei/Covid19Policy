@@ -19,9 +19,9 @@ setwd('/Users/sunyufei/Documents/GitHub/Covid19Force')
 options(scipen = 200)
 ```
 
-This is a notebook recording the decisions for the project in collaboration with Dr. Zheng Siyao and Dr. Wu Wenquan to study the Covid-19 mandatory policy during the Spring Festival of 2021 in prefecture-level cities in China
+This is a notebook recording the decisions for the project in collaboration with Master Jiajing Chen to study the Covid-19 mandatory policy during the Spring Festival of 2021 in prefecture-level cities in China.
 
-```{R}
+```{R CrawlerPolicy}
 citycode <- read_html("http://www.bendibao.com/index.htm") %>% 
   html_nodes("#city-list a") %>% 
   html_attrs()
@@ -62,6 +62,7 @@ a = a + 1
 print(c)
 }
 
-write.xlsx(CityForce, '/Users/sunyufei/Documents/GitHub/Covid19Force/data/forcetext.xlsx')
+qsave(CityForce, './data/foecetext20210206.qs')
+write.xlsx(CityForce, './data/foecetext20210206.xlsx')
 
 ```
