@@ -1,0 +1,67 @@
+---
+title: "Research Note"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+if (!require(pacman)) install.packages("pacman")
+library(pacman)
+p_load(
+  qs,
+  rvest,
+  tidyverse,
+  pinyin,
+  xlsx
+)
+set.seed(19960916)
+setwd('/Users/sunyufei/Documents/GitHub/Covid19Force')
+options(scipen = 200)
+```
+
+This is a notebook recording the decisions for the project in collaboration with Dr. Zheng Siyao and Dr. Wu Wenquan to study the Covid-19 mandatory policy during the Spring Festival of 2021 in prefecture-level cities in China
+
+```{R}
+citycode <- read_html("http://www.bendibao.com/index.htm") %>% 
+  html_nodes("#city-list a") %>% 
+  html_attrs()
+cityname <- read_html("http://www.bendibao.com/index.htm") %>% 
+  html_nodes("#city-list a") %>% 
+  html_text()
+CityForce <- as.data.frame(cityname)
+CityForce$citycode <- CityForce$cityname
+a <- 1
+for (c in citycode){
+  CityForce$citycode[a] <- c
+  a <- a + 1
+  print(c)
+}
+
+CityForce$duplicated <- duplicated(CityForce$cityname)
+
+CityForce <- CityForce %>% 
+  dplyr::filter(duplicated != TRUE) %>% 
+  dplyr::filter(citycode != "http://kunshan.bendibao.com/") %>% 
+  dplyr::filter(citycode != "http://hk.bendibao.com/") %>% 
+  dplyr::filter(citycode != "http://am.bendibao.com/") %>% 
+  dplyr::select(-duplicated)
+
+CityForce$citycode[8] <- "http://tj.bendibao.com/"
+CityForce$citycode[9] <- "http://cq.bendibao.com/"
+CityForce$citycode[92] <- "http://zz.bendibao.com/"
+CityForce$citycode[257] <- "http://dl.bendibao.com/"
+
+a <- 1
+for (c in CityForce$citycode){
+forcehtml <- read_html(paste0(c, "news/gelizhengce/all.php?leavecity=hk"), encoding = "UTF-8")
+forcetext <- forcehtml %>% 
+  html_nodes(".list-primary-item+ .list-primary-item .result") %>% 
+  html_text()
+CityForce$ForceText[a] <- forcetext
+a = a + 1
+print(c)
+}
+
+write.xlsx(CityForce, '/Users/sunyufei/Documents/GitHub/Covid19Force/data/forcetext.xlsx')
+
+```
