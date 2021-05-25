@@ -1,0 +1,195 @@
+---
+title: '第二次数据整理指南'
+subtitle: "Covid19 Policy"
+author: "Yufei Sun"
+institute: "Political Science, Tsinghua University"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: 
+      - zh-CN_custom.css
+      - styles.css
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      highlightSpans: true
+      countIncrementalSlides: false
+      ratio: 16:9
+---
+## Outline
+
+- 任务分配：地方政策标签&确诊人数收集
+
+- 地方政策标签
+
+- 确诊人数收集
+---
+class: inverse, center, middle
+
+# 任务分配：地方政策标签&确诊人数收集
+
+---
+
+## 任务分配：地方政策标签&确诊人数收集
+
+本次任务分成两个部分：
+- 地方政策标签
+  - Team1: 孟佳莲、司佳颖
+  - Team2: 洪能美、牛童
+
+- 确诊人数收集
+  - 刘艺晴
+  
+---
+
+## 地方政策标签
+
+- 任务背景
+
+2021年初，Covid19疫情在中国个别地市出现新增个案，各个地市发布了自己的春节返乡政策，我们的任务就是对这些春节返乡政策进行编码
+
+- 数据下载
+  - ForceText和DiffText是待编码的政策文本，ForceCoding和DiffCoding是待填写的编码结果
+  
+数据可通过[本链接](http://drhuteam.myqnapcloud.cn:3000/share.cgi?ssid=aec1ef50b1c8447e8149b865e7002f6b)下载（本链接将在3天后失效，及时下载，注意数据保密）
+
+- 编码完成标准
+
+两组同学会完成同样的内容，完成后会计算一致性水平，高于一致性水平即可
+
+---
+
+## 地方政策标签: 编码规则
+
+.red[.center[.huge[本次编码的对象只包括各地对低风险地区人群的防疫政策]]]
+
+没有直接定义低风险地区的情况：直接说省内，那么默认省内就是低风险。因为如果省内不是全部低风险，政策不会笼统地说省内
+
+---
+
+## 地方政策标签: 编码规则
+
+.small[本节会逐个变量的进行介绍]
+
+- 1-6 测体温、健康码、健康告知书、健康问询、健康提醒、报告/报备
+  - 有规定 = 1
+  - 没有规定 = 0
+  
+- 7 提前报备时间
+  - 规定报备且有明确天数 = 直接填写提前报备的天数（单位：天）
+  - 规定报备但无明确天数 = 1
+  - 没有规定报备 = 0
+  
+- 8 进入前核酸检测（持核酸检测阴性证明）
+  - 有规定 = 1
+  - 没有规定 = 0
+
+---
+
+- 9 进入前核酸检测时间
+  - 规定核酸检测且有明确天数 = 直接填写提前核酸检测天数（单位：天）
+  - 规定核酸检测但无明确天数 = 7
+  - 没有规定核酸检测 = 0
+
+- 10 进入后核酸检测
+  - 有规定 = 1
+  - 没有规定 = 0
+  
+- 11 进入后核酸检测次数
+  - 规定核酸检测且有明确次数 = 直接填写
+  - 规定核酸检测但无明确次数 = 1
+  - 没有规定核酸检测 = 0
+
+---
+
+- 12 进入后核酸检测时间
+  - 规定核酸检测且有明确天数 = 直接填写（单位：天）
+  - 规定核酸检测但无明确天数 = 1
+  - 没有规定核酸检测 = 0
+  
+- 13 血清学检测(血清抗体)
+  - 有规定 = 1
+  - 没有规定 = 0
+
+- 14 居家隔离(居家健康监测)
+  - 有规定 = 1
+  - 没有规定 = 0
+
+---
+
+- 15 居家隔离时间
+  - 规定且有明确天数 = 直接填写（单位：天）
+  - 规定但无明确天数 = 14
+  - 无规定 = 0
+  
+- 16 社区健康监测（社区健康管理）
+  - 有规定 = 1
+  - 没有规定 = 0
+  
+- 17 社区健康监测时间
+  - 规定且有明确天数 = 直接填写（单位：天）
+  - 规定但无明确天数 = 14
+  - 无规定 = 0
+
+---
+
+- 18 集中隔离
+  - 有规定 = 1
+  - 没有规定 = 0
+  
+- 19 集中隔离时间
+  - 规定且有明确天数 = 直接填写（单位：天）
+  - 规定但无明确天数 = 14
+  - 无规定 = 0
+
+- 20 特殊措施
+
+如果对.red[低风险地区进入的人群]有上述措施没有提及的其他特殊措施，请联系孙宇飞
+
+---
+
+## 数据上传
+
+- 请组内两个人自行分工完成Force和Diff两个文件的编码工作
+
+- 请在.red[本周五24点前]将完成的数据(ForceCoding和DiffCoding)发送至sunyf20@mails.tsinghua.edu.cn
+
+---
+
+## 确诊人数收集
+
+我们需要收集中国各省份和地级市的分别在.red[2021年1月1日]和.red[2021年1月31日]的累计确诊人数
+
+- 数据下载
+
+数据可通过[本链接](http://drhuteam.myqnapcloud.cn:3000/share.cgi?ssid=d5d858db254643e99156ee86e3ec1221)下载（本链接将在3天后失效，及时下载，注意数据保密）
+
+---
+
+## 确诊人数收集（规则介绍）
+
+- 各省两个时间点的确诊人数
+  - 通过[此链接](https://news.sina.cn/zt_d/yiqing0121)的地图选择详细信息来获得
+  
+- 各地级市两个时间点的确诊人数
+  - 通过点击ConfirmedCases文件中的url进入相应网站获取
+  
+---
+
+## 数据上传
+
+- 请在.red[本周五24点前]将完成的数据(ForceCoding和DiffCoding)上传至[此链接](http://drhuteam.myqnapcloud.cn:3000/share.cgi?ssid=d5d858db254643e99156ee86e3ec1221)
+
+---
+
+class: inverse, center, middle
+
+# 蟹蟹
+
+[sunyf20@mails.tsinghua.edu.cn](mailto:sunyf20@mails.tsinghua.edu.cn) 
+
+[Github: syfyufei](https://syfyufei.github.io/)
+
+[Yufei Sun: github.com/syfyufei](https://github.com/syfyufei)

@@ -103,6 +103,28 @@ a = a + 1
 print(c)
 }
 
+DGDI <- read.csv("/Users/sunyufei/Desktop/DGDI.csv")
+
+n <- 1
+while (n <= length(DGDI$CityNameChinese)) {
+  DGDI$RegionCode[n] <- regioncode::regioncode(DGDI$CityNameChinese[n], 2019, 2019, "name2code")
+  n <- n + 1
+  print(n)
+}
+
+data <- read.csv("/Users/sunyufei/Desktop/ConfirmedCases.csv")
+
+n <- 1
+while (n <= length(data$CityName)) {
+  data$CityCode[n] <- regioncode::regioncode(data$CityName[n], 2019,2019,"name2code",incompleteName = "from")
+  n <- n + 1
+  print(n)
+}
+
+data$url <- paste0("https://news.sina.cn/project/fy2020/yq_province.shtml?city=CN",data$CityCode,"00000000")
+
+write_csv2(data, "/Users/sunyufei/Documents/Yufei_Sun/THU/projects/Covid19Policy/data/IV/Upper_government_pressure/ConfirmedCases/ConfirmedCases.csv")
+
 qsave(CityForce, './data/foecetext20210206.qs')
 write.xlsx(CityForce, './data/foecetext20210206.xlsx')
 # 2021.2.6手动更新数据，补充数据分为三类：灰色标注，县级市，删去之即可；黄色标注，已补充，请更新；红色标注，没有明确的防疫信息
@@ -146,10 +168,17 @@ write.xlsx(CityForce, './data/foecetext20210206.xlsx')
     - 同级政府压力
       - 其他同级城市（省会和副省级城市/同省普通大中城市）的确诊数量
       - 其他同级城市（省会和副省级城市/同省普通大中城市）的政策严格程度
+      - 经济差值和差值在省内的排名
     - 民众压力
       - 政府留言板的数量/情绪？
     - 其他控制变量
       - 人口流动
       - 经济发展
       - 疫情变量
+      - 时间控制变量
+      
+      保守型政策能够解决共线性的问题
+      
+撤回
+      
 
