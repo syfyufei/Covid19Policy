@@ -15,7 +15,7 @@ documentclass: ctexart
 fontsize: 12pt
 geometry: margin=1in
 # bibliography: /Users/sunyufei/Desktop/Zotero.bib
-csl: "/Users/sunyufei/Documents/Yufei_Sun/THU/Education/Programming/R/Zotero/styles/american-political-science-association.csl"
+csl: "paper/china-national-standard-gb-t-7714-2015-author-date.csl"
 link-citations: true
 colorlinks: true
 toc: false
@@ -29,7 +29,6 @@ subtitle: "——基于Covid19期间的春节返乡政策的混合方法研究"
 
 author:
 - 孙宇飞^[清华大学政治学系博士生，联系电话：18638750921，邮箱：sunyf20@mails.tsinghua.edu.cn]
-- 陈佳静^[美国威斯康辛大学麦迪逊分校博士生，联系电话：，邮箱：]
 ---
 
 ```{r setup, include=FALSE}
@@ -59,8 +58,6 @@ set.seed(19970921)
 theme_set(theme_minimal())
 #Data input
 ```
-
-This is a notebook recording the decisions for the project in collaboration with PhD. student Jiajing Chen to study the Covid-19 mandatory policy during the Spring Festival of 2021 in prefecture-level cities in China.
 
 ```{R CrawlerPolicy, eval = FALSE}
 citycode <- read_html("http://www.bendibao.com/index.htm") %>% 
@@ -123,7 +120,7 @@ while (n <= length(data$CityName)) {
 
 data$url <- paste0("https://news.sina.cn/project/fy2020/yq_province.shtml?city=CN",data$CityCode,"00000000")
 
-write_csv2(data, "/Users/sunyufei/Documents/Yufei_Sun/THU/projects/Covid19Policy/data/IV/Upper_government_pressure/ConfirmedCases/ConfirmedCases.csv")
+write_csv2(data, "data/IV/Upper_government_pressure/ConfirmedCases/ConfirmedCases.csv")
 
 qsave(CityForce, './data/foecetext20210206.qs')
 write.xlsx(CityForce, './data/foecetext20210206.xlsx')
@@ -131,6 +128,154 @@ write.xlsx(CityForce, './data/foecetext20210206.xlsx')
 # 请注意，拉萨市已更新隔离政策，请重新标注；
 # 请注意，新疆自治区除乌鲁木齐、昌吉明确隔离政策和几个地级市完全没有发布政策外，其他地市均为搪塞政策，我们要单独分类或致电当地卫健委查询
 ```
+
+```{R datacleaning}
+# ForceCodeing1 <- read.csv("data/DV/Team1/ForceCoding.csv", header = TRUE)
+# n <- 1
+# for(i in 1:length(ForceCodeing1$CityName)){
+#   if (max(ForceCodeing1[n,][3:7]) > 0){
+#     ForceCodeing1$force[n] <- 1
+#   }
+#   if (ForceCodeing1$"报告.报备"[n] > 0){
+#     ForceCodeing1$force[n] <- 2
+#   }
+#   if (max(ForceCodeing1[n,][10:13]) > 0){
+#     ForceCodeing1$force[n] <- 3
+#   }
+#   if (max(ForceCodeing1[n,][18:19]) > 0){
+#     ForceCodeing1$force[n] <- 4
+#   }
+#   if (max(ForceCodeing1[n,][16:17]) > 0){
+#     ForceCodeing1$force[n] <- 5
+#   }
+#   if (ForceCodeing1$集中隔离[n] > 0){
+#     ForceCodeing1$force[n] <- 6
+#   }
+#   print(n)
+#   n <- n + 1
+# }
+# 
+# ForceCodeing2 <- read.csv("data/DV/Team2/ForceCoding.csv", header = TRUE)
+# n <- 1
+# for(i in 1:length(ForceCodeing2$CityName)){
+#   if (max(ForceCodeing2[n,][3:7]) > 0){
+#     ForceCodeing2$force[n] <- 1
+#   }
+#   if (ForceCodeing2$"报告.报备"[n] > 0){
+#     ForceCodeing2$force[n] <- 2
+#   }
+#   if (max(ForceCodeing2[n,][10:13]) > 0){
+#     ForceCodeing2$force[n] <- 3
+#   }
+#   if (max(ForceCodeing2[n,][18:19]) > 0){
+#     ForceCodeing2$force[n] <- 4
+#   }
+#   if (max(ForceCodeing2[n,][16:17]) > 0){
+#     ForceCodeing2$force[n] <- 5
+#   }
+#   if (ForceCodeing2$集中隔离[n] > 0){
+#     ForceCodeing2$force[n] <- 6
+#   }
+#   print(n)
+#   n <- n + 1
+# }
+# 
+# Recheck <- left_join(ForceCodeing1, ForceCodeing2, by = c("CityName", "CityCode"))
+# Recheck$W <- Recheck$force.x - Recheck$force.y
+# 
+# ForceText <- read_csv("data/DV/ForceText.csv") %>% 
+#   dplyr::select(cityname, ForceText) %>% 
+#   dplyr::rename(CityName = cityname)
+# 
+# Recheck <- Recheck %>% 
+#   dplyr::left_join(ForceText)
+# 
+# write_csv2(Recheck, "data/DV/Recheck.csv")
+
+ForceCoding_Province <- read.csv("data/DV/ForceCoding_Province.csv")
+
+ForceCodeing <- read_csv("data/DV/ForceCodingCorrected.csv") %>% 
+  dplyr::select(CityCode, Correct) %>% 
+  dplyr::rename(Force = Correct, RegionCode = CityCode)
+
+ablity <- read_csv("data/IV/Digital_governance_capabilities/DGDI.csv")
+
+fulldata <- ablity %>% 
+  dplyr::left_join(ForceCodeing)
+  
+ConfirmedCases_Province <- read.csv("data/IV/Upper_government_pressure/ConfirmedCases/ConfirmedCases_Province.csv") %>% 
+  dplyr::rename(ConfirmedCases20210101_Province = ConfirmedCases20210101, ConfirmedCases20210131_Province = ConfirmedCases20210131)
+
+ConfirmedCases_City <- read.csv("data/IV/Upper_government_pressure/ConfirmedCases/ConfirmedCases.csv") %>% 
+  dplyr::select(-url) %>% 
+  dplyr::rename(RegionCode = CityCode, ConfirmedCases20210101_City = ConfirmedCases20210101, ConfirmedCases20210131_City = ConfirmedCases20210131)
+
+ConfirmedCases <- ConfirmedCases_Province %>% 
+  dplyr::left_join(ConfirmedCases_City) %>% 
+  dplyr::select(-CityName)
+
+ConfirmedCases$ConfirmedCases_Period_City <- ConfirmedCases$ConfirmedCases20210131_City - ConfirmedCases$ConfirmedCases20210101_City
+ConfirmedCases$ConfirmedCases_Period_Province <- ConfirmedCases$ConfirmedCases20210131_Province - ConfirmedCases$ConfirmedCases20210101_Province
+
+fulldata <- fulldata %>% 
+  dplyr::left_join(ConfirmedCases) %>% 
+  dplyr::left_join(ForceCoding_Province)
+
+fulldata$load <- fulldata$Force - fulldata$ForcecodingProvince
+
+population_movement <- read.csv("data/CV/population_movement.csv")
+
+fulldata <- fulldata %>% 
+  dplyr::left_join(population_movement, by = "CityNameChinese")
+
+baidu_index <- read_csv("data/IV/Baidu_Index.csv")
+
+baidu_index$trend202012202101_covid19 <- baidu_index$trend20201231_covid19 + baidu_index$trend20210131_covid19
+
+fulldata <- fulldata %>% 
+  dplyr::left_join(baidu_index)
+
+citydata <- read_csv("data/IV/citydata.csv") %>% 
+  dplyr::rename(RegionCode = CityCode)
+
+fulldata <- fulldata %>% 
+  dplyr::left_join(citydata)
+
+dijishi <- fulldata %>% 
+  dplyr::filter(cityclass == 1)
+
+dijishi <- dijishi %>% 
+  dplyr::group_by(ProvinceCode) %>% 
+  dplyr::mutate(peer_pressure = mean(ConfirmedCases_Period_City))
+  
+shenghuichengshi <- fulldata %>% 
+  dplyr::filter(cityclass == 2)
+
+shenghuichengshi$peer_pressure <- mean(shenghuichengshi$ConfirmedCases_Period_City)
+
+zhixiashi <- fulldata %>% 
+  dplyr::filter(cityclass == 3)
+
+zhixiashi$peer_pressure <- mean(zhixiashi$ConfirmedCases_Period_City)
+
+fulldata <- rbind(dijishi, shenghuichengshi, zhixiashi)
+
+qsave(fulldata, "data/paperdata.qs")
+
+model <- glm(load ~ 治理能力 + `医院、卫生院床位数_全市_张` + ConfirmedCases_Period_City + ConfirmedCases_Period_Province + diff202012Covid + peer_pressure + 地区生产总值增长率_全市_百分比 + 年末总人口_全市_万人, family = poisson(link = "log"), data = fulldata)
+summary(model)
+
+```
+
+这是政治表态，所以要把压力体现方式分为几个维度，比如政治表态；具体措施；会议频度；领导人出现情况。然后根据自己掌握的材料，来说明选取了哪几个维度来测量。在这里压力就是“政令的统一和落实”
+
+- Level
+  - 1 = 基本通行政策（测体温、健康码、健康告知书、健康问询、健康提醒）
+  - 2 = 健康报备
+  - 3 = 核酸检测/抗体检测
+  - 4 = 健康监测
+  - 5 = 居家隔离
+  - 6 = 集中隔离
 
 # 文章分析逻辑
 
@@ -147,7 +292,7 @@ write.xlsx(CityForce, './data/foecetext20210206.xlsx')
 
 # 分析模型
 
-政策加码量（地级市） ~ 地级市数字治理能力 + 上级政府压力 + 同级政府压力 + 民众压力 + 其他控制变量
+政策加码量（地级市） ~ 地级市数字治理能力 + 上级政府压力 + 同级政府压力 + 民众压力 + 上级政府明令禁止“层层加码” + 其他控制变量
 
 - 分析单位：中国大中城市101（副省级和省会城市33 + 普通大中城市68）
 
@@ -162,23 +307,135 @@ write.xlsx(CityForce, './data/foecetext20210206.xlsx')
   - 自变量
     - 核心自变量：地级市数字治理能力（2020数字政府发展指数报告）
     - 上级政府压力
-      - 上级政府开会的次数
-      - 政府工作报告中提及的关键词数量
+      - 上级政府开会的次数（全么？准么？）
+      - 政府工作报告中提及的关键词数量（成果越好的提的越多？）
       - 该省的确诊人数
+      - 该省的经济发展水平
     - 同级政府压力
       - 其他同级城市（省会和副省级城市/同省普通大中城市）的确诊数量
       - 其他同级城市（省会和副省级城市/同省普通大中城市）的政策严格程度
       - 经济差值和差值在省内的排名
     - 民众压力
       - 政府留言板的数量/情绪？
+    - 上级政府明令禁止“层层加码”
     - 其他控制变量
       - 人口流动
       - 经济发展
       - 疫情变量
       - 时间控制变量
       
-      保守型政策能够解决共线性的问题
       
-撤回
+# Codebook
+
+## 地方政策标签: 编码规则
+
+.small[本节会逐个变量的进行介绍]
+
+- 1-6 测体温、健康码、健康告知书、健康问询、健康提醒、报告/报备
+  - 有规定 = 1
+  - 没有规定 = 0
+  
+- 7 提前报备时间
+  - 规定报备且有明确天数 = 直接填写提前报备的天数（单位：天）
+  - 规定报备但无明确天数 = 1
+  - 没有规定报备 = 0
+  
+- 8 进入前核酸检测（持核酸检测阴性证明）
+  - 有规定 = 1
+  - 没有规定 = 0
+
+- 9 进入前核酸检测时间
+  - 规定核酸检测且有明确天数 = 直接填写提前核酸检测天数（单位：天）
+  - 规定核酸检测但无明确天数 = 7
+  - 没有规定核酸检测 = 0
+
+- 10 进入后核酸检测
+  - 有规定 = 1
+  - 没有规定 = 0
+  
+- 11 进入后核酸检测次数
+  - 规定核酸检测且有明确次数 = 直接填写
+  - 规定核酸检测但无明确次数 = 1
+  - 没有规定核酸检测 = 0
+
+- 12 进入后核酸检测时间
+  - 规定核酸检测且有明确天数 = 直接填写（单位：天）
+  - 规定核酸检测但无明确天数 = 1
+  - 没有规定核酸检测 = 0
+  
+- 13 血清学检测(血清抗体)
+  - 有规定 = 1
+  - 没有规定 = 0
+
+- 14 居家隔离(居家健康监测)
+  - 有规定 = 1
+  - 没有规定 = 0
+
+- 15 居家隔离时间
+  - 规定且有明确天数 = 直接填写（单位：天）
+  - 规定但无明确天数 = 14
+  - 无规定 = 0
+  
+- 16 社区健康监测（社区健康管理）
+  - 有规定 = 1
+  - 没有规定 = 0
+  
+- 17 社区健康监测时间
+  - 规定且有明确天数 = 直接填写（单位：天）
+  - 规定但无明确天数 = 14
+  - 无规定 = 0
+
+- 18 集中隔离
+  - 有规定 = 1
+  - 没有规定 = 0
+  
+- 19 集中隔离时间
+  - 规定且有明确天数 = 直接填写（单位：天）
+  - 规定但无明确天数 = 14
+  - 无规定 = 0
+
+- 20 特殊措施
+
+# DV
+
+- Factor Analysis?
+
+- Time?
+  - 测体温(1)
+  - 健康码(1)
+  - 健康告知书(1)
+  - 健康问询(1)
+  - 健康提醒(1)
+  - 报告/报备(5)
+  - 提前报备时间
+  - 进入前核酸检测(60)
+  - 进入前核酸检测时间
+  - 进入后核酸检测(60)
+  - 进入后核酸检测次数
+  - 进入后核酸检测时间
+  - 血清学检测(血清抗体)(60)
+  - 居家隔离(360)
+  - 居家隔离时间
+  - 社区健康监测(720)
+  - 社区健康监测时间
+  - 集中隔离(1440)
+  - 集中隔离时间
+  - 特殊措施
+
+- Level
+  - 1 = 基本通行政策（测体温、健康码、健康告知书、健康问询、健康提醒）
+  - 2 = 健康报备
+  - 3 = 核酸检测/抗体检测
+  - 4 = 健康监测
+  - 5 = 居家隔离
+  - 6 = 集中隔离
+
+# 之后的研究展望
+
+- 治理能力与压力转化的关系
+- 政治距离与压力转化的关系（测量政治优先还是人民优先）
+- 治理能力、文化特性与疫情防控有效性的关系（究竟是能力强还是民众更守纪律）。典型事件往往可以集中放大各种矛盾。这也是为什么现在一些学者用电影来较政治学、公共管理的原因。
+
+
       
 
