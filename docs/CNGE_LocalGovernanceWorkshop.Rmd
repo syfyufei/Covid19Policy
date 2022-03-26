@@ -42,7 +42,39 @@ class: inverse, bottom
 
 ???
 
-Good afternoon dear professors and fellow students. My name is Sun Yufei. I am a PHD candidate from the Department of Political Science of Tsinghua University. It is my honor to have the opportunity to share my article collaborated with Prof. Yang Xuedong. Our title is 'Capacity Space' of Local Governance and the Pressure System.
+Good afternoon dear professors and fellow students. My name is Sun Yufei. I am a PHD candidate from the Department of Political Science of Tsinghua University. It is my honor to have the opportunity to share my article collaborated with Prof. Yang. Our title is 'Capacity Space' of Local Governance and the Pressure System.
+
+---
+
+## Same Country, Different Travel Restriction Policy
+
+.pull-left[
+
+.center[<img src="https://p9.itc.cn/q_70/images03/20220121/a1e250727089446c99f99b66515a2635.jpeg" height = 300 width = 600 />]
+
+"Henan: Return Home with Malicious Intent"
+
+]
+
+--
+
+.pull-right[
+
+<img src="fugure/shanghai.gif" height = 300 width = 600 />
+
+"Shanghai: Nucleic Acid Test under Firework"
+
+]
+
+???
+
+Let's start with a story of reunion. It is a Chinese tradition to return home for the new year.
+
+In 2021, in my hometown, Henan province, I had a hard time in returning home for the New Year due to a series of travel restrictions, and some local officials even regarded our returning as a bad intent.
+
+However, my Shanghai friends had a different story while returning to Shanghai, everything went smoothly, people were even doing the nucleic acid test under fireworks. It is even a bit romantic!
+
+Why the unified policy from central government varies so much from place to place. This is our puzzle of this article.
 
 ---
 
@@ -52,7 +84,9 @@ Good afternoon dear professors and fellow students. My name is Sun Yufei. I am a
 
 ???
 
-In recent years, as the core link of local governance, researchers have discussed the impact of intergovernmental relations on local government behavior and governance models from the perspectives of different departments and levels. Scholars "Honeycomb" Structure
+In recent years, as the important topic of local governance, researchers have discussed the impact of intergovernmental relations on local governance from the perspectives of different departments and levels.
+
+There are "Honeycomb" Structure
 
 --
 
@@ -84,7 +118,7 @@ and other explanations such as Pressure System.
   
 ???
 
-Among them, the "Pressure System", as a theoretical description of the practice of Chinese local governance, has received extensive attention and sparked a lot of discussions from scholars at home and abroad. [@YangXueDong2012] It not only vividly describes the pressure and the motivation in Chinese local governance 
+Among them, the "Pressure System", as a theoretical description of the Chinese local governance practice, has received a lot of discussions from scholars. It not only vividly describes the pressure and the motivation in Chinese local governance.
   
 --
 
@@ -95,11 +129,11 @@ Among them, the "Pressure System", as a theoretical description of the practice 
     
     - "Project System" (Chen Jiajian, 2013)
     
-    - "Administrative Subcontracting System" (Zhou Li'an, 2014a)
+    - "Administrative Subcontracting System" (Zhou Li'an, 2014)
 
 ???
 
-Also, due to the overall nature of its theory, it can better integrate other explanatory concepts such as "Target-Responsibility System" [@Edin2003], "Project System" [@ChenJiaJian2013], "Administrative Subcontracting System" [@ZhouLiAn2014] ).
+Also, it can better integrate other concepts such as "Target-Responsibility System" [@Edin2003], "Project System" [@ChenJiaJian2013], "Administrative Subcontracting System" [@ZhouLiAn2014] ).
 
 ---
 
@@ -111,8 +145,7 @@ Also, due to the overall nature of its theory, it can better integrate other exp
 
 ???
 
-The core of the "pressure system" lies in the "pressure coefficient", that is, the autonomy space of the local government is determined by the superior government, and the central government can dynamically adjust the autonomy space of local governance through the adjustment of the "pressure coefficient".
-
+The core of the "pressure system" is the "pressure coefficient", which is adjusted by the central government. Which means, the autonomy space of the local government is controlled by the superior government.
 
 --
 
@@ -126,30 +159,31 @@ The core of the "pressure system" lies in the "pressure coefficient", that is, t
 
 ???
 
-Its operation includes three main parts: "Three Elements", "Four Sources" and "Two Decompression".
+"Pressure System" includes "Three Elements", "Four Sources" and "Two Pressure relief valves".
 The "three elements" are Quantitative task decomposition mechanism, Problem solving mechanism with joint participation of all departments, and the materialized multi-level evaluation system.
 
 --
 
-.navy[""Four sources""]:
+.navy["Four sources":
 
 Superiors, peers, the general public and the market
 
 
 ???
 
-"Four sources" means that local governments face pressure from four sources: superiors, peers, the general public and the market.
+"Four sources" means that local governments face pressure from: superiors, peers, the general public and the market.
+
 ---
 
 ## Characteristics, Contributions and New Changes of "Pressure System"
 
-.navy["Two Pressure Relief Valves":]
+.navy["Two pressure relief valves":]
 
 - .red["relationship"]&.red[statistics]
 
 ???
 
-"Two Pressure Relief Valves" refers to the pressure relief valves of the two major pressure systems, which are "relationship" and "statistics". "Relationship" means that superiors and subordinates use informal mechanisms such as personal relationships to conduct games and set goals. "Statistics" means that the superiors can adjust the "pressure parameters" of the subordinates through adjusting the statistical method and the caliber.
+"Two pressure relief valves" are "relationship" and "statistics". "Relationship" means that superior governments and local governments use informal way such as personal relationships to conduct games and set goals. "Statistics" means that the superior governments can adjust the "pressure coefficient" of the local government through adjusting the statistical method.
 
 
 ---
@@ -162,7 +196,9 @@ Superiors, peers, the general public and the market
 
 ???
 
-Since the 18th National Congress of the Communist Party of China, the party and the government have initiated a series of major political system changes, and scholars have vividly described the influence of changing political atmosphere on Chinese local governance since then from the perspectives of re-centralization of supreme power [@Guo2020]
+Since the 18th National Congress of the Communist Party of China, the central government have initiated a series of major political system changes, and scholars have described the influence of changing political atmosphere on Chinese local governance from the perspectives of
+
+re-centralization of supreme power [@Guo2020]
 
 --
 
@@ -242,6 +278,8 @@ It increasingly narrows the running space of informal system like "relationship"
 
 --
 
+in addition,
+
 .center[Control of statistical power + extension of digital management to local administration]
 
 ???
@@ -258,7 +296,7 @@ The control of statistical power and the extension of digital management to loca
 
 
 ???
-It becomes more and more difficult for the pressure relief valve "Statistics" to function.
+makes it become more and more difficult for the pressure relief valve "Statistics" to function.
 
 
 ---
@@ -309,7 +347,7 @@ Shanghai: nucleic acid test under fireworks
 
 We found that under a similar pressure process, although most local governments increased pressure to respond to the pressure from their superiors, and ensure the realization of policy goals, not all local governments adopted the same strategy of increasing pressure.
 
-Taking the current "epidemic prevention and control" as an example, in the face of the same policy goals and pressure from superiors, some places adopt a one-size-fits-all policy, maximizing the execution of various regulations on epidemic prevention and control, and striving to obtain the greatest prevention and control effect at the shortest time, lowest level, and least cost.
+Taking the current "travel restriction policy" as an example, in the face of the same policy goals and pressure from superiors, some places adopted a one-size-fits-all policy, maximizing the travel restriction, and striving to obtain the greatest prevention effect at the shortest time, lowest level, and least cost.
 
 This heterogeneity proves to a certain extent that local governments still have a certain degree of autonomy in the environment of "strong supervision, weak incentives and hard indicators"; the "pressure relief valve" is actively applied by the local governments.
 
@@ -333,64 +371,46 @@ Then why does this pressure relief valve exist?
 
 class: inverse, bottom
 
-# Political Diffusion and "Capacity Space"
+# "Capacity Space"
 
 ---
 
+## New IV: "Capacity Space"
 
-
-## Political Diffusion and "Capacity Space"
-
-
-"Political Diffusion":
-
-- Internal actors (DOLOWITZ et al., 1996)
-
-  - Preference (HUBER et al., 2002; SHIPAN et al., 2006)
-  
-  - Goals (GROSSBACK et al., 2004)
-  
-  - .red[capacity] (HUBER et al., 2002)
+.center[<img src="fugure/figure3.png" height = 600 width = 1000 />]
 
 
 ???
 
-Base on the classic research on political diffusion, we propose our hypothesis 
+State capacity is a premise for state autonomy, and the capacity of local governments also allows them to retain some space for autonomy despite pressure from multiple parties
 
 
----
-
-## Political Diffusion and "Capacity Space"
-
-.center[<img src="fugure/figure2.png" height = 600 width = 1300 />]
-
-
-???
-
-
-We believe that it is different from the previous "pressure coefficient". The current autonomy does not come from the superior government, but initiative of the local governments. Specifically, this new pressure relief valve comes from the governance capacity of local governments. This allows them to retain a certain degree of autonomy under pressure from multiple parties, and the size of this autonomous space is determined by their governance strength. We call this autonomous space obtained by capacity "competence space".
 
 ---
 
 class: inverse, bottom
 
-# Empirical test: the epidemic prevention and control policies in various places during the Chinese New Year of 2021 as an example
+# Empirical test: the travel restriction policies in various places during the Chinese New Year of 2021 as an example
 
 ---
 
 ## research questions
 
-RQ1: Have local governments at different levels and regions in China been affected by the "pressure system" in their epidemic prevention and control policies during the Chinese New Year of 2021? Was there a phenomenon of "incremental policies"?
+RQ1: Have local governments at different levels and regions in China been affected by the "pressure system" in their travel restriction policies during the Chinese New Year of 2021? Was there a phenomenon of "incremental policies"?
 
 RQ2: If this "incremental policies" phenomenon based on the pressure system was common, was there any heterogeneity in the incremental strategies of different local governments? What factors influenced the extent of increment in policies?
 
 ???
 
-We test the above hypothesis by analyzing the differential formulation of epidemic prevention and control policies across China during the Chinese New Year of 2021.
+We test the capacity space by analyzing the differential formulation of travel restriction policies across China during the Chinese New Year of 2021.
 
-Specifically, this paper attempts to answer two research questions: First, although the society has criticized the phenomenon of "incremental policies" and "one size fits all" in the epidemic prevention and control policies during the Chinese New Year of 2021, have local governments at different levels and regions in China been affected by the "pressure system" in their epidemic prevention and control policies during the Chinese New Year of 2021? Was there a phenomenon of "incremental policies"? Further, if this phenomenon was common, was there any heterogeneity in the incremental strategies of different local governments? What factors influenced the extent of increment in the policies?
+Specifically, this paper attempts to answer two research questions: First, Have local governments at different levels and regions in China been affected by the "pressure system" in their travel restriction policies during the Chinese New Year of 2021? Was there a phenomenon of "incremental policies"? 
 
-To find out the answers, we first used natural language processing methods to encode the epidemic prevention and control policy texts of 293 prefecture-level cities in China during the Chinese New Year of 2021, investigating the phenomenon of "incremental policies" in governments at all levels; Then we conducted a regression analysis to identify and test the influencing variables and pressure sources.
+"incremental policies" means the policy become more and more strict from the top government to the local.
+
+Further, if this phenomenon was common, was there any heterogeneity in the incremental strategies of different local governments? What factors influenced the extent of increment in the policies?
+
+To find out the answers, we first used natural language processing methods to encode the travel restriction policy texts of 293 prefecture-level cities in China during the Chinese New Year of 2021, investigating the phenomenon of "incremental policies" in governments at all levels; Then we conducted a regression analysis to identify and test the influencing variables and pressure sources.
 
 ---
 
@@ -400,7 +420,7 @@ To find out the answers, we first used natural language processing methods to en
 
 - Evident pressure transfer
 
-- charming.navy[heterogeneity]
+- charming .navy[heterogeneity]
 
 ???
 
@@ -408,7 +428,7 @@ To find out the answers, we first used natural language processing methods to en
 We chose this case because:
 
 **First, the central mission was clear. **
-Under the unified arrangement of the central government, the policy objectives of various regions were rather clear. The entire social and economic system operated around the command of local epidemic prevention and control. The party and government departments are not only commanders, but also organizers and fighters;
+Under the unified arrangement of the central government, the policy objectives of various regions were rather clear. The entire social and economic system operated around the command of local travel restriction policy. The party and government departments are not only commanders, but also organizers and fighters;
 
 **Second, the pressure transfer was evident. **
 After the State Council issued the policy, the administrative departments from the central government to the provinces, the prefecture-level cities, and the grass-roots villages (communities) have issued the detailed implementation rules;
@@ -419,14 +439,14 @@ More importantly, although they are under the same pressure, and they all use "i
 
 ## Research hypotheses
 
-**H1: There was a phenomenon of "incremental policies" in the epidemic prevention and control policies made by local governments at different levels and regions in China during the Chinese New Year of 2021;**
+H1: There was a phenomenon of "incremental policies" in the travel restriction policies made by local governments at different levels and regions in China during the Chinese New Year of 2021;
 
 
-**H2: The governance capacity of local governments affected the extent of increment in the policies ;**
+H2: The governance capacity of local governments affected the extent of increment in the policies ;
 
-- **H2.1: The higher the digital governance capacity with local governments, the less the extent of increment in the policies;**
+- H2.1: The higher the digital governance capacity with local governments, the less the extent of increment in the policies;
 
-- **H2.2: The higher the medical capacity with the local governments, the less the extent of increment in the policies. **
+- H2.2: The higher the medical capacity with the local governments, the less the extent of increment in the policies. 
 
 
 ???
@@ -434,15 +454,17 @@ More importantly, although they are under the same pressure, and they all use "i
 Our first hypothesis is that "incremental policies" were common across the country and at all levels of governments.
 
 
+H2: The governance capacity of local governments affected the extent of increment in the policies ;
+
 ---
 
 ## Data sources and variable settings
 
 .pull-left[
 
-Dependent variable: the extent of increment in epidemic prevention and control policies during the Chinese New Year of 2021
+Dependent variable: the extent of increment in travel restriction policies during the Chinese New Year of 2021
 
-From .red [low risk areas] to .red [people in urban areas]
+From .red[low risk areas] to .red[people in urban areas]
 
 Web crawler + natural language processing + multiple manual verification
 
@@ -465,11 +487,11 @@ Web crawler + natural language processing + multiple manual verification
 
 The dependent variable in this study is the extent of increment in the policies.
 
-We would like to emphasize that we only focus on local epidemic control and prevention policies for people from **low-risk areas** who travel to **urban areas**. We chose the low-risk area was because all sectors of society held a quite consistent opinion on the control of people from **medium and high risk areas**, where strict measures were adopted to contain the epidemic; **urban area** was selected because the central government had already clearly stipulated prevention and control policies for the return to rural areas.
+We would like to emphasize that we only focus on local travel restrictions for people from **low-risk areas** who travel to **urban areas**. We chose the low-risk areas was because all sectors of society held a quite consistent opinion on the control of people from **medium and high risk areas**, where strict measures were adopted to contain the epidemic; **urban areas** was selected because the central government had already clearly made travrl res for the returning to rural areas.
 
-First, we used web crawlers to obtain the epidemic prevention and control policies of 293 prefecture-level cities across the country during the Spring Festival in 2021 from data sources such as government websites, government official accounts, and government service platforms.
+First, we used web crawlers to obtain the travel restriction policies texts of 293 prefecture-level cities across the country during the Chinese New Year of 2021 from data sources such as government websites, government official accounts, and government service platforms.
 
-For the above policy text, we use a combination of machine coding and human review to encode the target policy. We first used regular expressions to identify the key words of the policy text for preliminary classification; secondly, the three coders of the research team checked the original text after training, and determined the fuzzy and disputed classifications one by one, and finally formed a consensus classification results. Through machine coding and manual verification, we divide the target policies into "conditional free movement" (1), "health reporting" (2), "nucleic acid testing" (3), "health monitoring" (4), "stay at home" There are six types of health monitoring” (5) and “home isolation” (6).
+For the above policy texts, we combined machine coding and manual verification to encode them. We first used regular expression to identify the key words of the policy text for preliminary classification; secondly, three trained research coders of our team reviewed and verified the original text, spotting the fuzzy and disputed classifications one by one to finally reach consistent classification results. Through machine coding and manual verification, we divided the target policies into six types: "conditional free mobility" (1), "health reporting" (2), "nucleic acid test" (3), "health monitoring" (4), "Home Health Monitoring"  (5) and “Home Quarantine” (6).
 
 --
 
@@ -477,19 +499,19 @@ For the above policy text, we use a combination of machine coding and human revi
 
 - Local governance capacity
 
-  - Digital government governance capabilities (Research Report on the Development of China's Digital Government (2021))
+  - Digital governance capacity (Research Report on the Development of China's Digital Government (2021))
   
-  - Medical capabilities
+  - Medical capacity
     
-- Higher-level government pressure
+- Superior government pressure
   
   - Number of confirmed cases in the province last month
 
-- Peer-level government pressure
+- Peer government pressure
 
   - The number of confirmed cases in cities at the same level last month
   
-- Popular pressure
+- Public pressure
 
   - Baidu Index
 
@@ -497,25 +519,25 @@ For the above policy text, we use a combination of machine coding and human revi
 
 ???
 
-Our core independent variable is the local governance capacity. We use the "Research Report on the Development of China's Digital Government" published by the Data Governance Center of Tsinghua University in 2021 as the evaluation index of the local government's digital governance capacity. In terms of the medical capacity of the local government, we use the number of hospital beds in the prefecture-level city.
+Our core independent variable is the local governance capacity. We used the "Research Report on the Development of China's Digital Government" published by the Data Governance Center of Tsinghua University in 2021 as the evaluation index of the local governments' digital governance capacity. In terms of their medical capacity, we chose the number of hospital beds in the prefecture-level cities.
 
-At the same time, we also examine variables such as the higher-level government, the same-level government, and the public. We use the number of confirmed cases in the month before the policy promulgation of the prefecture-level city (December 2020) as a proxy variable for higher-level government pressure.
+Meanwhile, we also tested variables such as the superior government, peer government, and the public. We used the number of confirmed cases of the province where the prefecture-level city is located , in the month before the policy release (which was December 2020) as a proxy variable for superior government pressure.
 
-In terms of government at the same level, we believe that the pressure on local governments comes not only from governments at the same level in the same region, but also from local governments at the same level with more similar levels of development. Therefore, we divide the pressure of the government at the same level into two cases. If the prefecture-level city is a sub-provincial city or a provincial capital city, we use the number of confirmed cases in the city at the same level; if the prefecture-level city is a general city, we use the same province. the number of confirmed cases in other cities. I use the month-on-month growth of the Baidu search index of the keyword "epidemic" in December 2020 as a proxy variable for public pressure.
+In terms of peer governments, we believe that the pressure on local governments come, not only from peer governments in the same region, but also from peer governments with similar levels of development. Therefore, we divided the peer government pressure into two cases. If the prefecture-level city is a sub-provincial city or a provincial capital city, we used the number of confirmed cases of the cities at the same level; otherwise, if the prefecture-level city is a general city, we used the number of confirmed cases in other cities within the same province. To measure the public pressure, we use the month-on-month growth of the Baidu search index under the keyword "epidemic" in December 2020 as a proxy variable.
 
 
 ---
 
-## The phenomenon of "layers of coding" between local governments at different levels and regions
+## The phenomenon of "Incremental Policies" between local governments at different levels and regions
 
 <img src="fugure/cengcengjiama.png"/>
 
 
 ???
 
-From the table below, we can easily see that the prevention and control policies proposed by provincial governments are, on average, more stringent than those proposed by the central government, and the strictness of municipal governments is higher than that of provincial governments. At the city level, the epidemic prevention policy during the Spring Festival in 2021 presents a trend of "layer-by-layer overweight" that is becoming more and more strict at the grassroots level.
+From the table below, we can see that the travrl res proposed by provincial governments were more strict than those proposed by the central government, and the strictness of city governments was higher than that of provincial governments. Policies were becoming more and more strict to the grassroots level. It shows a trend of "increment". 
 
-Specifically, Jilin Province has the most overweight at the provincial level, requiring all those returning to (coming to) Jilin from "non-medium-high-risk areas" to hold a negative nucleic acid test certificate within 3 days. The most overweight at the municipal level is represented by Dezhou, Shandong. In high-level cities, these local governments require people returning from low-risk areas to undergo 14-day home health monitoring.
+Specifically, Jilin Province had the most policy increment at the provincial level, requiring all those returning to (or coming to) Jilin from "non-medium or high-risk areas" to hold a negative nucleic acid test certificate obtained within 3 days before arrival. The most policy increment found at the city level was represented by Dezhou, Shandong. These local governments required people returning from low-risk areas to undergo 14-day health monitoring at home.
 
 ---
 
@@ -523,29 +545,29 @@ Specifically, Jilin Province has the most overweight at the provincial level, re
 
 <img src="fugure/dongzhongxi.png"/>
 
-.center[.red[There is a phenomenon of “layers of overweight” in the epidemic prevention and control policies of local governments at different levels and regions in China during the Spring Festival in 2021. At the level, the prefecture-level city government overweights the most, and in space, digital governance Areas with weak capabilities have the most overweight. ]]
+.center[.red[There is a phenomenon of “incremental policies” in the travel restriction policies of local governments at different levels and regions in China during the Chinese New Year of 2021. In terms of level, the prefecture-level city governments incremented polices the most, and in space, weak digital governance areas incremented policies the most. ]]
 
 ???
 
-We selected one province each in East, Central, West, and Northeast to compare their overweight differences in detail.
+We selected one province each in East, Central, West, and Northeast to compare their increment differences in detail.
 
-We found that in terms of spatial distribution, the pressure-based system is still a national system, and the overweight situation of epidemic prevention policies is widespread in the central, western and northeastern regions except Zhejiang Province. And there is obvious heterogeneity in space.
+We found that in terms of spatial distribution, the pressure system remained a national system, and the increment situation of travel res policies was common in the central, western and northeastern regions except for Zhejiang Province. And there was obvious heterogeneity in space.
 
 
 
 ---
 
-## "Capability Space": Empirical Evidence of Government Capability and Overweight
+## "Capacity Space": Empirical Evidence of Government Capacity and the Extent of Policy Increment 
 
 .center[<img src="fugure/figure1.png" height = 600 />]
 
 ???
 
-What factors contributed to this heterogeneity? We found that the four sources of pressure in the classical theory still have strong explanatory power. Local epidemic pressure, government pressure at the same level, higher government pressure, and public pressure still have a significant impact on the degree of overweight of local government epidemic prevention and control policies.
+What factors contributed to this heterogeneity? We found that the four sources of pressure in the classical theory still have strong explanatory power. Local pressure, peer government pressure, superior government pressure, and public pressure still have a significant impact on the extent of increment of local travel restriction policies.
 
-On this basis, we identify and test the influence of the local government's governance capacity, and we find that the local government's digital governance capacity and medical capacity have a significant impact on the degree of local government's epidemic prevention and control policies: under the premise of controlling for other variables The stronger the digital governance capability of the local government, the less the overweight of the epidemic prevention and control policy; the stronger the health capacity, the less the policy overweight. In other words, governance capacity is a pressure reducing valve for local governments to face pressure from all parties. The stronger the governance capacity, the greater the administrative autonomy of the local government, that is, the greater the "capacity space", so that it can more flexibly handle the pressure from multiple parties and policy overweight.
+On this basis, we tested the influence of the local governments' governance capacity, and we found that the local governments' digital governance capacity and medical capacity have a significant impact on the degree of local government's travel restriction policies: under the premise of controlling for other variables, the stronger the digital governance capacity with the local governments, the less the extent of increment in the travel restriction policy; likewise,  the stronger the medical capacity, the less the extent of increment in the policy. In other words, governance capacity is a pressure relief valve for local governments to face pressure from all parties. The stronger the governance capacity, the greater the administrative autonomy of the local government, that is, the greater the "capacity space", so it can more flexibly handle the pressure from multiple parties and policy increment.
 
-After standardizing the variables, we can compare the degree of influence of different independent variables on the dependent variable. Through the comparison of the figure on the right, we found that the local medical volume can have the greatest impact on all independent variables; the local digital governance capacity also has a greater impact on the degree of overweight of the local government's epidemic prevention and control policies.
+After standardizing the variables, we can compare the degree of influence of different independent variables on the dependent variable. Through the comparison of the figure on the right, we found that the local medical capacity has the greatest impact on all independent variables; the local digital governance capacity also has a greater impact on the extent of increment of the local governments' travel restrictions.
 
 
 ---
@@ -554,15 +576,15 @@ After standardizing the variables, we can compare the degree of influence of dif
 
 - The pressure system still works
 
-- "Capacity Space": The "Relief Valve" Effect of Local Government Governance Capability on the Operation of "Pressure-Based System"
+- "Capacity Space": The "Relief Valve" Effect of Local Government Governance Capacity on the Operation of "Pressure System"
 
 ???
 
-This study takes the differential formulation of epidemic prevention and control policies in various parts of China during the Spring Festival in 2021 as an example to test that after the reform of the political system at the 18th National Congress of the Communist Party of China, the "pressure system" still has a strong explanation for the practice of local governance in China It also discovered the "pressure-reducing valve" effect of local government governance capacity on the operation of the "pressure-based system", put forward the view of "capacity space", and carried out theoretical revisions and tests of the "pressure-based system" in the new era.
+This study takes the differential formulation of travel restriction policies in various parts of China during the Chinese New Year in 2021 as an example, examining that after the reform of the political system at the 18th National Congress of the Communist Party of China, the "pressure system" remains a strong explanation for the practice of Chinese local governance. It also discovered the "pressure relief valve" effect of local governance capacity on the pressure system, and put forward the point of "capacity space", providing theoretical revision of the "pressure system" in the new era.
 
-It should be noted that this paper also has obvious deficiencies: First, due to data limitations, we only analyze the overweight behavior at the level of "central-province-prefecture-level cities", but not for county-level governments in the original theory. There are enough data to carry out an empirical test; secondly, the specific impact mechanism of local government governance capacity on local autonomy under the pressure-type system needs to be further improved by follow-up research.
+However, this paper also has some deficiencies: first, due to data limitation, we did not analyze county-level governments, which are included in the original theory. There are enough data to carry out an empirical test; In addition, the specific impact mechanism of local government governance capacity on local autonomy under the pressure system needs to be further examined in future research.
 
-My report is here, please criticize and give advice.
+That's my sharing. Thank you so much for your attention and please feel free to ask questions or comment.
 
 ---
 class: inverse, center, middle
