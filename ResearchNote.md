@@ -47,28 +47,28 @@ author:
 ## 
 ## Deviance Residuals: 
 ##     Min       1Q   Median       3Q      Max  
-## -1.8032  -1.1197  -0.8670   0.5392   2.9611  
+## -1.7564  -1.0677  -0.8376   0.4084   3.1141  
 ## 
 ## Coefficients:
-##                                  Estimate Std. Error z value Pr(>|z|)  
-## (Intercept)                     1.655e+00  9.330e-01   1.774   0.0761 .
-## 治理能力                       -5.840e-02  2.776e-02  -2.104   0.0354 *
-## `医院、卫生院床位数_全市_张`   -3.281e-05  1.647e-05  -1.993   0.0463 *
-## ConfirmedCases_Period_City      1.914e-03  9.172e-04   2.086   0.0370 *
-## ConfirmedCases_Period_Province  1.088e-03  5.217e-04   2.086   0.0370 *
-## diff202012Covid                -8.877e-03  4.126e-03  -2.151   0.0315 *
-## peer_pressure                   2.572e-02  1.224e-02   2.101   0.0356 *
-## 地区生产总值增长率_全市_百分比 -2.875e-02  8.074e-02  -0.356   0.7218  
-## 年末总人口_全市_万人            1.889e-03  7.752e-04   2.436   0.0148 *
+##                                  Estimate Std. Error z value Pr(>|z|)   
+## (Intercept)                     1.620e+00  9.668e-01   1.675  0.09388 . 
+## 治理能力                       -6.764e-02  2.838e-02  -2.383  0.01716 * 
+## `医院、卫生院床位数_全市_张`   -3.975e-05  1.740e-05  -2.285  0.02233 * 
+## ConfirmedCases_Period_City      1.757e-03  9.171e-04   1.916  0.05534 . 
+## ConfirmedCases_Period_Province  1.161e-03  5.331e-04   2.178  0.02939 * 
+## diff202012Covid                -8.585e-03  4.190e-03  -2.049  0.04046 * 
+## peer_pressure                   3.175e-02  1.252e-02   2.535  0.01124 * 
+## 地区生产总值增长率_全市_百分比 -8.530e-03  8.414e-02  -0.101  0.91925   
+## 年末总人口_全市_万人            2.221e-03  8.015e-04   2.771  0.00558 **
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
 ## (Dispersion parameter for poisson family taken to be 1)
 ## 
-##     Null deviance: 166.69  on 93  degrees of freedom
-## Residual deviance: 138.99  on 85  degrees of freedom
+##     Null deviance: 163.93  on 93  degrees of freedom
+## Residual deviance: 132.08  on 85  degrees of freedom
 ##   (13 observations deleted due to missingness)
-## AIC: 235.77
+## AIC: 225.87
 ## 
 ## Number of Fisher Scoring iterations: 6
 ```
@@ -241,7 +241,6 @@ author:
 - 治理能力与压力转化的关系
 - 政治距离与压力转化的关系（测量政治优先还是人民优先）
 - 治理能力、文化特性与疫情防控有效性的关系（究竟是能力强还是民众更守纪律）。典型事件往往可以集中放大各种矛盾。这也是为什么现在一些学者用电影来较政治学、公共管理的原因。
-
 
       
 

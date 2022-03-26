@@ -15,7 +15,7 @@ documentclass: ctexart
 fontsize: 12pt
 geometry: margin=1in
 bibliography: Covid19Policy.bib
-csl: "china-national-standard-gb-t-7714-2015-author-date.csl"
+csl: "the-chinese-journal-of-international-politics.csl"
 link-citations: true
 colorlinks: true
 toc: false

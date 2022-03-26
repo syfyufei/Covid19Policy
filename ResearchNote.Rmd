@@ -52,7 +52,8 @@ p_load(grid,
        scales,
        tidyverse,
        drhutools,
-       qs)
+       qs,
+       rvest)
 set.seed(19970921)
 # Theme setup
 theme_set(theme_minimal())
@@ -60,6 +61,42 @@ theme_set(theme_minimal())
 ```
 
 ```{R CrawlerPolicy, eval = FALSE}
+
+url <- read_csv("/Users/sunyufei/Desktop/tianjinUrl.csv") %>% 
+  dplyr::select(url)
+airticle <- data_frame(c(1:length(url$url)))
+airticle$title <- c(1:length(url$url))
+airticle$text <- c(1:length(url$url))
+airticle$source <- c(1:length(url$url))
+airticle$publishTime<- c(1:length(url$url))
+n = 1
+
+for (n in 1:length(url$url)) {
+  airticle$title[n] <- as.character(paste0(list(read_html(url$url[n]) %>% 
+  html_nodes("#activity-name") %>% 
+  html_text())))
+  airticle$text[n] <- as.character(paste0(list(read_html(url$url[n]) %>% 
+  html_nodes("section p") %>% 
+  html_text())))
+  airticle$source[n] <- as.character(paste0(list(read_html(url$url[n]) %>% 
+  html_nodes("#js_name") %>% 
+  html_text())))
+  print(n)
+}
+
+
+
+
+data$cityname <- c()
+
+for (a in 1:length(data$data)) {
+  data$cityname[a] <- read_html(data$data[a]) %>% 
+  html_nodes("p") %>% 
+  html_text()
+  print(a)
+}
+
+
 citycode <- read_html("http://www.bendibao.com/index.htm") %>% 
   html_nodes("#city-list a") %>% 
   html_attrs()
@@ -264,6 +301,8 @@ qsave(fulldata, "data/paperdata.qs")
 
 model <- glm(load ~ 治理能力 + `医院、卫生院床位数_全市_张` + ConfirmedCases_Period_City + ConfirmedCases_Period_Province + diff202012Covid + peer_pressure + 地区生产总值增长率_全市_百分比 + 年末总人口_全市_万人, family = poisson(link = "log"), data = fulldata)
 summary(model)
+
+
 
 ```
 
